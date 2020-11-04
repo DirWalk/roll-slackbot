@@ -1,2 +1,2 @@
 # roll-slackbot
-Slackbot to D&amp;D like with modifiers
+Slackbot that rolls with D&amp;D like modifiers
