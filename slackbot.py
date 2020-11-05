@@ -12,7 +12,11 @@ def roll(arg, mod=0):
     modifier = int(mod)
     for _ in range(rolls):
         rand_number = random.choice(range(modifier + 1, sides + modifier))
-        print("Your roll is: {}".format(rand_number))
+        #print("Your roll is: {}".format(rand_number))
+        #print("Your roll is: {} and your modifier is: {}, therefore your roll is: {}".format(rand_number - modifier, modifier, rand_number))
+        print("Your roll is: {}".format(rand_number - modifier))
+        print("Your modifier is: {}".format(modifier))
+        print("Your modified roll is: {}".format(rand_number))
 
 
 def run():
@@ -22,10 +26,5 @@ def run():
         roll(sys.argv[1])
 
 
-#if __name__ == '__main__':
-#    run()
-
-
 if __name__ == '__main__':
-    for _ in range(sys.argv[3]):
-        run()
+    run()
